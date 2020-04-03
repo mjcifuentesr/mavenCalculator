@@ -10,6 +10,7 @@
  */
 import org.junit.*;
 import com.maven.calculadoramaven.*;
+import static org.junit.Assert.*;
 
 public class testMaven {
     
@@ -20,9 +21,23 @@ public class testMaven {
     }
     
     @Before
-    public static void initPruebas(){
-        
+    public void initPruebas(){
+        System.out.println("Se inician las pruebas unitarias");
     }
     
+    @Test
+    public void pruebaSuma(){
+        assertTrue(calculator.suma(7, 9)==(7+9));
+    }
+    
+    @After
+    public void finishPruebas(){
+        System.out.println("Se inician las pruebas unitarias");
+    }
+    
+    @AfterClass
+    public static void disposeCalculator(){
+        calculator=null;
+    }
     
 }
