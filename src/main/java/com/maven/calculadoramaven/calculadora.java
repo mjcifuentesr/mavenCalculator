@@ -20,7 +20,7 @@ public class calculadora {
     }
     
     public double resta(double a, double b){
-        return a-b;
+        return a-b+b;
     }
     
     public double multiplicacion(double a, double b){
