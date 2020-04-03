@@ -1,3 +1,5 @@
+package com.maven.calculadoramaven;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,9 +14,10 @@ import org.junit.*;
 import com.maven.calculadoramaven.*;
 import static org.junit.Assert.*;
 
-public class testMaven {
+public class Testcalculadora {
     
     private static calculadora calculator;
+    
     @BeforeClass
     public static void initCalculator(){
         calculator= new calculadora();
