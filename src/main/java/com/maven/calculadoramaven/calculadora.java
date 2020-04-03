@@ -11,6 +11,7 @@ package com.maven.calculadoramaven;
  */
 public class calculadora {
 
+    
     public calculadora() {
     }
     
@@ -19,7 +20,7 @@ public class calculadora {
     }
     
     public double resta(double a, double b){
-        return a-b+b;
+        return a-b;
     }
     
     public double multiplicacion(double a, double b){

@@ -25,7 +25,7 @@ public class Testcalculadora {
     
     @Before
     public void initPruebas(){
-        System.out.println("Se inician las pruebas unitarias");
+        System.out.println("Se inician las pruebas unitarias de suma");
     }
     
     @Test
@@ -35,9 +35,9 @@ public class Testcalculadora {
     
     @After
     public void finishPruebas(){
-        System.out.println("Se inician las pruebas unitarias");
+        System.out.println("Se finalizan las pruebas unitarias de suma");
     }
-    
+ 
     @AfterClass
     public static void disposeCalculator(){
         calculator=null;
